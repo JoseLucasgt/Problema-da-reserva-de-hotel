@@ -66,7 +66,7 @@ def orcamentoPorHotel(matrizClienteRegular, matrizClienteReward,
     return hotelLakewood, hotelBridgewood, hotelRidgewood
 
 
-def CustoBeneficio(numeroDeDiarias, hotelLakewood, hotelBridgewood, hotelRidgewood):
+def custoBeneficio(numeroDeDiarias, hotelLakewood, hotelBridgewood, hotelRidgewood):
     # Soma dos valores dos dias por hotel
     hotelLakewood.append(sum(hotelLakewood[1:numeroDeDiarias + 2]))
     hotelBridgewood.append(sum(hotelBridgewood[1:numeroDeDiarias + 2]))
@@ -105,7 +105,7 @@ def recomendacao(tipoDeCliente, numeroDeDiarias, vetorPeriodoDaSemana):
                                                                        numeroDeDiarias, vetorPeriodoDaSemana)
 
     # Verifica melhor custo benefício
-    CustoBeneficio(numeroDeDiarias, hotelLakewood, hotelBridgewood, hotelRidgewood)
+    custoBeneficio(numeroDeDiarias, hotelLakewood, hotelBridgewood, hotelRidgewood)
 
 
 # Verifica tipo de cliente
